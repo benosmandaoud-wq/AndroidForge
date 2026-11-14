@@ -279,7 +279,7 @@ jobs:
             /root/.gradle/caches
             /root/.gradle/wrapper
             ${{ steps.extract.outputs.project_root }}/.gradle
-          key: gradle-${{ runner.os }}-${{ steps.toolchain.outputs.gradle_version }}-${{ github.ref }}
+          key: gradle-${{ runner.os }}-${{ github.ref }}
           restore-keys: |
             gradle-${{ steps.toolchain.outputs.gradle_version }}-
             gradle-
